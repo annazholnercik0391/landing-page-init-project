@@ -1,0 +1,87 @@
+html {
+  font-family: $font-main;
+  font-size: $font-size;
+}
+
+body {
+  color: $color-gray;
+  font-family: $font-main;
+}
+a {
+  color: rgb(1, 1, 1);
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    color: $color-accent;
+  }
+}
+section {
+  overflow: hidden;
+  width: 100%;
+}
+.about,
+.features,
+.gallery,
+.blog,
+.advantages__content,
+.contacts {
+  display: flex;
+  min-height: 100vh;
+  flex-wrap: wrap;
+  align-content: center;
+
+  @include lg-min {
+    padding-top: 105px;
+    padding-bottom: 90px;
+  }
+
+  @include lg-md {
+    padding-top: 105px;
+    padding-bottom: 75px;
+  }
+
+  @include md-sm {
+    padding-top: 90px;
+    padding-bottom: 60px;
+  }
+
+  @include sm {
+    padding-top: 90px;
+    padding-bottom: 45px;
+  }
+}
+.about__title,
+.features__title,
+.gallery__title,
+.blog__title,
+.advantages__title,
+.contacts__title {
+  text-align: center;
+
+  @include lg-min {
+    margin: 0 0 45px;
+  }
+  @include lg-md {
+    margin: 0 0 37.5px;
+  }
+  @include md-sm {
+    margin: 0 0 30px;
+  }
+  @include sm {
+    margin: 0 0 22.5px;
+  }
+}
+.features__description,
+.gallery__description,
+.blog__description,
+.advantages__description,
+.contacts__description {
+  text-align: center;
+
+  @include md-min {
+    margin-bottom: 45px;
+  }
+  @include md {
+    margin-bottom: 30px;
+  }
+}

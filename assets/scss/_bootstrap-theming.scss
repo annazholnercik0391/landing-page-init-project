@@ -1,0 +1,125 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $color-dark;
+
+  font-family: $font-header;
+}
+h5 {
+  font-size: 1.125rem;
+}
+.back2top {
+  position: fixed;
+  right: $gap;
+  bottom: $gap;
+  display: none;
+  width: 45px;
+  height: 45px;
+  transition: opacity 0.3s;
+  opacity: 0.2;
+  border-bottom: none;
+  border-radius: 4px;
+  background-color: $color-dark;
+}
+
+.back2top i {
+  position: relative;
+  top: $gap;
+  margin: 0;
+
+  transition: top 0.3s;
+  color: $color-light;
+  font-size: 1rem;
+}
+
+.back2top:hover,
+.back2top:focus {
+  opacity: 1;
+}
+
+.back2top:hover i,
+.back2top:focus i {
+  top: 5px;
+}
+.header-navbar
+.nav-item:not(.active):hover
+.nav-link,
+.header-navbar
+.nav-item:not(.active):focus
+.nav-link {
+  color: $color-light;
+}
+.header-navbar
+.nav-item:not(.active):hover
+.nav-link::after,
+.header-navbar
+.nav-item:not(.active):focus
+.nav-link::after {
+  height: 3px;
+  transition: bottom 0.5s, opacity 0.5s;
+  opacity: 1;
+
+  @include lg-min {
+    bottom: 10px;
+  }
+  @include lg {
+    bottom: 4px;
+  }
+}
+.navbar-dark
+.navbar-toggler {
+  border-color: rgba(254, 254, 254, 0.75);
+}
+.navbar-dark
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 0.75)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+.navbar-expand-lg > .container,
+.navbar-expand-lg > .container-fluid {
+  @include lg-sm {
+    padding-right: $gap;
+    padding-left: $gap;
+  }
+}
+.navbar-expand-lg .navbar-nav .nav-item {
+  padding-right: 7.5px;
+  padding-left: 7.5px;
+}
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding-right: 7.5px;
+  padding-left: 7.5px;
+  color: $color-light;
+
+  @include lg {
+    text-align: center;
+  }
+}
+
+.bg-danger {
+  background-color: $color-accent !important;
+}
+.justify-content-md-center {
+  @include md-min {
+    justify-content: center !important;
+  }
+}
+.fa-link::before {
+  content: "";
+}
+.blog > .container {
+  padding-right: $gap*2;
+  padding-left: $gap*2;
+}
+.advantages__content > .row {
+  @include xl-lg {
+  margin-right: 0;
+  margin-left: 0;
+}
+  @include xl-min {
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+}

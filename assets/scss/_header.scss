@@ -1,0 +1,69 @@
+.header-navbar {
+  transition: background-color 0.5s, padding 0.25s;
+
+  @include lg {
+    background-color: rgba(1, 1, 1, 0.85);
+  }
+  @include lg-min {
+    padding: $gap 0;
+    background-color: transparent;
+  }
+   &--scrolled {
+     & .active
+     .nav-link {
+       color: $color-accent !important;
+       text-shadow: 0 0 1px $color-accent;
+
+       &::after {
+         height: 3px;
+         opacity: 1;
+         background-color: $color-accent;
+
+         @include lg-min {
+           bottom: 10px;
+         }
+         @include lg {
+           bottom: 4px;
+         }
+       }
+     }
+     @include lg-min {
+       padding: 0;
+       background-color: rgba(1, 1, 1, 0.85);
+     }
+     @include lg {
+       background-color: rgba(1, 1, 1, 0.85);
+     }
+   }
+  & .nav-link {
+    position: relative;
+    overflow: hidden;
+    @include lg-min {
+      padding-top: $gap;
+      padding-bottom: $gap;
+    }
+    &::after {
+      position: absolute;
+      bottom: 0;
+      height: 0;
+      content: "";
+      opacity: 0;
+      background-color: $color-light;
+
+      @include lg-min {
+        left: 0;
+        width: 100%;
+      }
+      @include lg {
+        left: 25%;
+        width: 50%;
+      }
+    }
+  }
+}
+
+
+
+
+
+

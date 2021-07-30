@@ -1,0 +1,40 @@
+.advantages {
+  background-color: #d8d8d8;
+  & .container-fluid {
+    @include lg-md{
+      max-width: 720px;
+    }
+    @include md-sm {
+      max-width: 540px;
+    }
+  }
+  &__image {
+    min-height: 100vh;
+    background-position: 33% 50%;
+    background-size: cover;
+    @include lg {
+      display: none;
+    }
+  }
+}
+.advantage-item {
+  &__icon {
+    flex-grow: 0;
+    & i {
+      margin-top: 7.5px;
+      text-align: center;
+      color: $color-accent;
+      @include sm-min {
+        width: 60px;
+        font-size: 2.75rem;
+      }
+      @include sm {
+        width: 35px;
+        font-size: 2rem;
+      }
+    }
+  }
+  &__caption {
+    margin-bottom: $gap;
+  }
+}

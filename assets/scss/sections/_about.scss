@@ -1,0 +1,8 @@
+.about__item {
+  margin-bottom: 30px;
+}
+.progress {
+  @include lg-min {
+    height: 20px;
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "systemParams": "win32-x64-64",
+  "modulesFolders": [
+    "libs"
+  ],
+  "flags": [],
+  "linkedModules": [],
+  "topLevelPatterns": [
+    "@fortawesome/fontawesome-free@^5.8.1",
+    "aos@^3.0.0-beta.6",
+    "bootstrap@^4.3.1",
+    "jQuery-One-Page-Nav@https://github.com/davist11/jQuery-One-Page-Nav.git",
+    "jquery@^3.4.0",
+    "popper.js@^1.15.0"
+  ],
+  "lockfileEntries": {
+    "@fortawesome/fontawesome-free@^5.8.1": "https://registry.yarnpkg.com/@fortawesome/fontawesome-free/-/fontawesome-free-5.10.2.tgz#27e02da1e34b50c9869179d364fb46627b521130",
+    "aos@^3.0.0-beta.6": "https://registry.yarnpkg.com/aos/-/aos-3.0.0-beta.6.tgz#75148e3be4bb1add53f5a1828623bf82b67691e9",
+    "bootstrap@^4.3.1": "https://registry.yarnpkg.com/bootstrap/-/bootstrap-4.3.1.tgz#280ca8f610504d99d7b6b4bfc4b68cec601704ac",
+    "classlist-polyfill@^1.2.0": "https://registry.yarnpkg.com/classlist-polyfill/-/classlist-polyfill-1.2.0.tgz#935bc2dfd9458a876b279617514638bcaa964a2e",
+    "jQuery-One-Page-Nav@https://github.com/davist11/jQuery-One-Page-Nav.git": "https://github.com/davist11/jQuery-One-Page-Nav.git#22b0153d674dc3e34a337eb456f3a83a91809db5",
+    "jquery@^3.4.0": "https://registry.yarnpkg.com/jquery/-/jquery-3.4.1.tgz#714f1f8d9dde4bdfa55764ba37ef214630d80ef2",
+    "lodash.debounce@^4.0.8": "https://registry.yarnpkg.com/lodash.debounce/-/lodash.debounce-4.0.8.tgz#82d79bff30a67c4005ffd5e2515300ad9ca4d7af",
+    "lodash.throttle@^4.1.1": "https://registry.yarnpkg.com/lodash.throttle/-/lodash.throttle-4.1.1.tgz#c23e91b710242ac70c37f1e1cda9274cc39bf2f4",
+    "popper.js@^1.15.0": "https://registry.yarnpkg.com/popper.js/-/popper.js-1.15.0.tgz#5560b99bbad7647e9faa475c6b8056621f5a4ff2"
+  },
+  "files": [],
+  "artifacts": {}
+}

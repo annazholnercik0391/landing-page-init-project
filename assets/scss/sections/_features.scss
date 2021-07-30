@@ -1,0 +1,40 @@
+.features {
+  background-color: #e5e5e5;
+  &__icon {
+    @include md-min {
+      display: flex;
+      width: 80px;
+      height: 90px;
+      margin: 30px auto 60px;
+      color: #ffffff;
+      background: $color-accent;
+      font-size: 2rem;
+      align-items: center;
+      justify-content: center;
+      clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    }
+    @include md {
+      display: flex;
+      width: 68px;
+      height: 76.5px;
+      margin: 25.5px auto 51px;
+      color: #ffffff;
+      background: $color-accent;
+      font-size: 1.5rem;
+      align-items: center;
+      justify-content: center;
+      clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    }
+  }
+}
+.feature {
+  margin-bottom: 7.5px;
+  padding-top: 7.5px;
+
+  &__title {
+    text-align: center;
+  }
+  &__description {
+    text-align: center;
+  }
+}
